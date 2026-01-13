@@ -3,75 +3,99 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Global RWE Study Design Solutions | Sakshi Salvi</title>
-  <meta name="description" content="Case study: Designing global Real-World Evidence (RWE) study solutions at IQVIA (systems design, localization, validation, release)." />
+  <title>Designing Global RWE Study Solutions at IQVIA | Sakshi Sandeep Salvi</title>
+  <meta name="description" content="Portfolio case study: Designing global Real-World Evidence (RWE) study solutions at IQVIA using Sculptor (systems design, templates, localization, testing, release)." />
+
   <style>
-    :root {
-      --maxw: 880px;
-      --fg: #111;
-      --muted: #444;
-      --bg: #fff;
-      --card: #f6f6f6;
-      --border: #e7e7e7;
-      --radius: 14px;
+    :root{
+      --bg:#ffffff;
+      --fg:#111111;
+      --muted:#4a4a4a;
+      --border:#e8e8e8;
+      --card:#f6f6f6;
+      --maxw: 920px;
+      --radius: 16px;
     }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      line-height: 1.6;
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+      line-height:1.65;
     }
-    header {
-      padding: 44px 18px 18px;
-      border-bottom: 1px solid var(--border);
+    a{ color:inherit; }
+    .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 18px; }
+    header{
+      border-bottom:1px solid var(--border);
+      padding:48px 0 22px;
     }
-    .wrap { max-width: var(--maxw); margin: 0 auto; }
-    h1 { margin: 0 0 10px; font-size: 34px; line-height: 1.2; }
-    .meta { color: var(--muted); font-size: 15px; }
-    .pill {
-      display: inline-block;
-      padding: 4px 10px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      margin: 6px 8px 0 0;
-      font-size: 13px;
-      color: var(--muted);
+    h1{
+      margin:0 0 10px;
+      font-size:34px;
+      line-height:1.2;
+      letter-spacing:-0.3px;
     }
-    main { padding: 20px 18px 60px; }
-    h2 { margin: 34px 0 10px; font-size: 22px; }
-    h3 { margin: 18px 0 6px; font-size: 16px; }
-    p { margin: 10px 0; }
-    ul { margin: 10px 0 10px 22px; }
-    li { margin: 6px 0; }
-    .callout {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 14px 16px;
-      margin: 18px 0;
+    .sub{
+      color:var(--muted);
+      font-size:15px;
     }
-    .grid {
-      display: grid;
+    .pills{ margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; }
+    .pill{
+      border:1px solid var(--border);
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:13px;
+      color:var(--muted);
+      background:#fff;
+    }
+    main{ padding:26px 0 64px; }
+    h2{
+      margin:34px 0 10px;
+      font-size:22px;
+      letter-spacing:-0.2px;
+    }
+    h3{
+      margin:18px 0 8px;
+      font-size:16px;
+    }
+    p{ margin:10px 0; }
+    ul,ol{ margin:10px 0 10px 22px; }
+    li{ margin:6px 0; }
+    .callout{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:14px 16px;
+      margin:18px 0;
+    }
+    .grid{
+      display:grid;
       grid-template-columns: 1fr;
-      gap: 12px;
-      margin: 14px 0;
+      gap:12px;
+      margin:16px 0 6px;
     }
-    .card {
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 14px 16px;
+    .card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:14px 16px;
+      background:#fff;
     }
-    .footer {
-      color: var(--muted);
-      font-size: 14px;
-      border-top: 1px solid var(--border);
-      padding: 18px;
+    .k{
+      color:var(--muted);
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:0.6px;
+      margin-bottom:6px;
     }
-    a { color: inherit; }
-    @media (min-width: 900px) {
-      .grid.two { grid-template-columns: 1fr 1fr; }
+    .footer{
+      border-top:1px solid var(--border);
+      padding:18px 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+    @media (min-width: 900px){
+      .grid.two{ grid-template-columns: 1fr 1fr; }
     }
   </style>
 </head>
@@ -79,22 +103,26 @@
 <body>
   <header>
     <div class="wrap">
-      <h1>Designing Global RWE Study Solutions at IQVIA</h1>
-      <div class="meta">
-        <strong>Sakshi Sandeep Salvi</strong> · Business Systems Analyst / Solution Designer (Systems Product Design)
-        <br />
-        Platform: Sculptor · Scope: ~5 global studies · 25+ countries/languages
+      <h1>Designing Global Real-World Evidence (RWE) Study Solutions at IQVIA</h1>
+      <div class="sub">
+        <strong>Role:</strong> Business Systems Analyst / Solution Designer<br/>
+        <strong>Company:</strong> IQVIA<br/>
+        <strong>Context:</strong> Real-World Evidence / Study Design Solutions<br/>
+        <strong>Platform:</strong> Sculptor (Clinical Solution Design Interface)<br/>
+        <strong>Projects:</strong> Managed design for ~5 global studies
       </div>
-      <div>
+
+      <div class="pills">
         <span class="pill">Systems thinking</span>
-        <span class="pill">Localization (25+)</span>
         <span class="pill">Templates & standards</span>
-        <span class="pill">Testing & release</span>
+        <span class="pill">Localization (25+)</span>
+        <span class="pill">Testing & quality</span>
+        <span class="pill">Release readiness</span>
       </div>
 
       <div class="callout">
-        <strong>What I designed:</strong> not a pixel UI. A configuration-driven system where clarity of logic, scalable templates,
-        and language accuracy determined whether global deployments succeeded.
+        The design surface was not a traditional visual UI, but a complex configuration environment (Sculptor).
+        Success was measured by clarity of logic, ease of configuration, accuracy of localized content, and minimal friction across global deployments.
       </div>
     </div>
   </header>
@@ -102,96 +130,146 @@
   <main>
     <div class="wrap">
 
-      <h2>Overview</h2>
       <div class="grid two">
-        <div class="card"><strong>Context</strong><br/>Real-World Evidence (RWE) / Study Design solutions</div>
-        <div class="card"><strong>Users</strong><br/>Clinical researchers, operational teams, cross-functional partners</div>
-        <div class="card"><strong>My role</strong><br/>End-to-end solution design from discovery to deployment</div>
-        <div class="card"><strong>Outcome</strong><br/>Scalable patterns, reduced rework, consistent global deployments</div>
+        <div class="card">
+          <div class="k">What this case study shows</div>
+          Designing scalable systems for complex workflows, where language, logic, validation rules, and cross-device behavior must work together.
+        </div>
+        <div class="card">
+          <div class="k">Why it matters</div>
+          RWE study solutions operate in high-stakes environments where clarity, consistency, and error prevention directly impact execution quality.
+        </div>
       </div>
 
       <h2>The Challenge</h2>
       <p>
-        <!-- Replace this paragraph with your Gamma “Challenge” section -->
-        RWE studies require designing digital solutions that work across diverse clinical workflows, regions, and devices,
-        while maintaining data integrity and audit readiness. The design surface was Sculptor, a configuration environment
-        where logic, content, validation rules, and localization must fit together cleanly.
+        Real-World Evidence (RWE) studies at IQVIA involve collecting and interpreting data from real clinical environments to generate reliable insights for life-science clients.
+        Designing digital solutions to support RWE studies meant juggling:
+      </p>
+      <ul>
+        <li>Diverse clinical workflows</li>
+        <li>Multi-country language requirements</li>
+        <li>Regulatory and data integrity constraints</li>
+        <li>Complex logic and validation rules</li>
+        <li>Cross-device usability</li>
+        <li>Rapid iteration cycles driven by stakeholder feedback</li>
+      </ul>
+      <p>
+        My work focused on designing study solutions that were not only functionally robust but also clear, consistent, and deployable at scale.
       </p>
 
-      <h2>My Role & Ownership</h2>
+      <h2>My Role &amp; Contribution</h2>
+      <p>As the primary designer on 5 RWE study design projects, I drove:</p>
       <ul>
-        <!-- Replace these bullets with your Gamma “Role” bullets -->
-        <li>Led requirements discovery and translated stakeholder needs into structured workflows and system logic.</li>
-        <li>Designed reusable templates and standard patterns to reduce variability and error.</li>
-        <li>Managed localization and translation across 25+ countries and validated language in context.</li>
-        <li>Ran cross-device testing, UAT workflows, and supported release/deployment.</li>
-        <li>Iterated in an agile feedback loop with clinical, operational, QA, and engineering teams.</li>
+        <li><strong>End-to-end solution design:</strong> From requirements → Sculptor configuration → release.</li>
+        <li><strong>Stakeholder discovery &amp; alignment:</strong> Collaborated with clinical researchers, operational leads, and technologists to translate needs into structured workflows.</li>
+        <li><strong>Template creation &amp; standardization:</strong> Built reusable configuration patterns to reduce variability and errors.</li>
+        <li><strong>Localization &amp; translation management:</strong> Supported solutions across 25+ languages and regions.</li>
+        <li><strong>Agile iteration &amp; feedback loops:</strong> Rapid refinement cycles based on stakeholder feedback and test outcomes.</li>
+        <li><strong>Cross-device validation:</strong> Ensured workflows functioned correctly across device types before release.</li>
+        <li><strong>Release coordination:</strong> Partnered with engineering and QA to deliver stable, validated solutions.</li>
       </ul>
 
       <h2>Understanding the Users</h2>
-      <p>
-        <!-- Replace with your Gamma “Users” section -->
-        Users needed predictable system behavior, clear language, and confidence that configurations adhered to clinical and regulatory requirements.
-      </p>
+      <p>Rather than generic personas, the users I supported were:</p>
+      <ul>
+        <li>Clinical researchers configuring study instruments and logic</li>
+        <li>Operational teams validating workflows and managing deployments</li>
+        <li>Global stakeholders relying on consistent behaviour across regions</li>
+      </ul>
+      <p>These users needed:</p>
+      <ul>
+        <li>Predictable behaviour from the study tools</li>
+        <li>Clear language and rules</li>
+        <li>Confidence that deployments adhered to clinical and regulatory needs</li>
+      </ul>
 
       <h2>Design Approach</h2>
 
-      <h3>Systems thinking first</h3>
-      <ul>
-        <!-- Replace with your Gamma “Systems thinking” bullets -->
-        <li>Structured logic flows so stakeholders could reason about behavior and edge cases.</li>
-        <li>Encoded best practices into templates to reduce cognitive load and speed delivery.</li>
-        <li>Made meaning explicit through naming, rules, and constraints to prevent invalid states.</li>
-      </ul>
-
-      <h3>Iterative feedback & agile collaboration</h3>
+      <h3>Systems Thinking First</h3>
       <p>
-        <!-- Replace with your Gamma “Iteration” section -->
-        I built tight feedback loops with stakeholders, refining configurations based on review sessions, test outcomes, and implementation constraints.
+        Because the design surface was Sculptor — a configuration tool — I designed systems rather than screens:
       </p>
+      <ul>
+        <li>Organized logic flows so stakeholders could reason about them naturally</li>
+        <li>Built configuration templates that encoded best practices</li>
+        <li>Ensured every element had clear meaning and predictable behavior</li>
+      </ul>
+      <p>
+        This wasn’t just “making it work”; it was making it understandable.
+      </p>
+
+      <h3>Iterative Feedback &amp; Agile Collaboration</h3>
+      <p>I built close feedback loops with stakeholders, driving decisions based on:</p>
+      <ul>
+        <li>Stakeholder review sessions</li>
+        <li>Functional testing and edge cases</li>
+        <li>Cross-device validation results</li>
+      </ul>
+      <p>Every iteration got more stable and clearer, reducing late-stage rework.</p>
 
       <h2>Key Design Decisions</h2>
       <ol>
-        <!-- Replace with your 3 decisions from Gamma -->
-        <li><strong>Reusable configuration templates:</strong> standardized repeatable patterns to improve consistency and speed.</li>
-        <li><strong>Language-aware structuring:</strong> modularized content and validated translations in context to avoid logic-text mismatches.</li>
-        <li><strong>Validation & constraint rules:</strong> introduced safeguards to reduce runtime errors and protect data integrity.</li>
+        <li>
+          <strong>Reusable Configuration Templates</strong><br/>
+          I abstracted repeatable patterns (e.g., consent flows, symptom logic, scheduling rules) into curated templates that could be reused and adapted.
+          This improved consistency and reduced configuration time by ~30%.
+        </li>
+        <li>
+          <strong>Language-Aware Structuring</strong><br/>
+          Because studies ran across 25+ languages, I structured content and logic for translation readiness.
+          That meant keeping copy modular and validating translations in context, preventing mismatches between logic and text.
+        </li>
+        <li>
+          <strong>Validation &amp; Constraint Rules</strong><br/>
+          I introduced explicit system constraints in Sculptor to prevent invalid combinations of logic and content.
+          These safeguards reduced runtime errors and improved data integrity across deployments.
+        </li>
       </ol>
 
-      <h2>Testing, Release & Quality</h2>
+      <h2>Testing &amp; Quality Assurance</h2>
+      <p>Designing systems at scale meant testing is design. I led:</p>
       <ul>
-        <!-- Replace with your Gamma testing section -->
-        <li>Cross-device functional validation and scenario testing for edge cases.</li>
-        <li>UAT cycles with clinical and operational stakeholders.</li>
-        <li>Release readiness checks and post-deployment verification.</li>
+        <li>Functional validation across device types</li>
+        <li>Scenario testing for edge-case behaviors</li>
+        <li>UAT cycles with clinical and operational stakeholders</li>
       </ul>
+      <p>Errors caught early in these design-oriented tests saved time and reduced downstream fixes by ~25%.</p>
 
-      <h2>Results & Impact</h2>
+      <h2>Results &amp; Impact</h2>
       <ul>
-        <!-- Replace with your Gamma impact bullets -->
-        <li>Supported global deployments across multiple regions with consistent behavior.</li>
-        <li>Reduced configuration errors and rework through clearer patterns and validation.</li>
-        <li>Maintained language integrity across 25+ translations.</li>
-        <li>Strengthened cross-functional alignment through clearer logic and documentation.</li>
+        <li>Designed and deployed solutions for multiple RWE studies across global regions.</li>
+        <li>Standardized templates that improved consistency and scalability of future studies.</li>
+        <li>Reduced configuration errors and rework through clear logic and validation rules.</li>
+        <li>Ensured language integrity across 25+ translations.</li>
+        <li>Strengthened collaboration between clinical, operational, and technical teams.</li>
+        <li>Ultimately, these solutions delivered reliable, globally consistent study tools that supported real research outcomes.</li>
       </ul>
 
       <h2>Reflection</h2>
       <p>
-        <!-- Replace with your reflection -->
-        This work reinforced that design isn’t only pixels. In complex systems, good design is clarity under constraints:
-        patterns that scale, language that communicates intent, and structures that prevent error.
+        This work reinforced that design isn’t only about pixels. In complex systems with high stakes, good design is about:
+      </p>
+      <ul>
+        <li>Clarity under complexity</li>
+        <li>Patterns that scale</li>
+        <li>Language that communicates intent</li>
+        <li>Structures that prevent error</li>
+      </ul>
+      <p>
+        I enjoy designing products that empower other builders — and this project sharpened that skill in a high-stakes, global context.
       </p>
 
-      <h2>Artifacts (Redacted)</h2>
+      <h2>What to Include Visually (Redacted)</h2>
       <div class="callout">
-        Add redacted visuals here:
+        Even though this isn’t UI-centric, visuals are essential. Include:
         <ul>
-          <li>Workflow diagram(s)</li>
-          <li>Annotated configuration screenshots (redacted)</li>
-          <li>Template examples</li>
-          <li>Validation rules / decision logic</li>
+          <li>Workflow diagrams showing logic flows</li>
+          <li>Annotated configuration screenshots from Sculptor</li>
+          <li>Example templates you created</li>
+          <li>Validation rule diagrams</li>
         </ul>
-        Place images in <code>/assets</code> and reference them like: <code>&lt;img src="assets/workflow-redacted.png" /&gt;</code>
+        Use redactions where necessary to protect IP.
       </div>
 
     </div>
