@@ -4,16 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Designing Global RWE Study Solutions at IQVIA | Sakshi Sandeep Salvi</title>
-  <meta name="description" content="Portfolio case study: Designing global Real-World Evidence (RWE) study solutions at IQVIA using Sculptor (systems design, templates, localization, testing, release)." />
+  <meta name="description" content="Portfolio case study: Designing global Real-World Evidence (RWE) study solutions at IQVIA (systems design, templates, localization, testing, agile iteration, release)." />
 
   <style>
     :root{
       --bg:#ffffff;
-      --fg:#111111;
+      --fg:#101010;
       --muted:#4a4a4a;
       --border:#e8e8e8;
       --card:#f6f6f6;
-      --maxw: 920px;
+      --maxw: 940px;
       --radius: 16px;
     }
     *{ box-sizing:border-box; }
@@ -22,13 +22,13 @@
       background:var(--bg);
       color:var(--fg);
       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-      line-height:1.65;
+      line-height:1.7;
     }
     a{ color:inherit; }
     .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 18px; }
     header{
       border-bottom:1px solid var(--border);
-      padding:48px 0 22px;
+      padding:52px 0 22px;
     }
     h1{
       margin:0 0 10px;
@@ -40,7 +40,12 @@
       color:var(--muted);
       font-size:15px;
     }
-    .pills{ margin-top:14px; display:flex; flex-wrap:wrap; gap:8px; }
+    .pills{
+      margin-top:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
     .pill{
       border:1px solid var(--border);
       border-radius:999px;
@@ -97,6 +102,13 @@
     @media (min-width: 900px){
       .grid.two{ grid-template-columns: 1fr 1fr; }
     }
+    code{
+      background:#f3f3f3;
+      border:1px solid var(--border);
+      padding:2px 6px;
+      border-radius:8px;
+      font-size: 0.95em;
+    }
   </style>
 </head>
 
@@ -104,11 +116,12 @@
   <header>
     <div class="wrap">
       <h1>Designing Global Real-World Evidence (RWE) Study Solutions at IQVIA</h1>
+
       <div class="sub">
         <strong>Role:</strong> Business Systems Analyst / Solution Designer<br/>
         <strong>Company:</strong> IQVIA<br/>
         <strong>Context:</strong> Real-World Evidence / Study Design Solutions<br/>
-        <strong>Platform:</strong> Sculptor (Clinical Solution Design Interface)<br/>
+        <strong>Platform:</strong> Sculptor (Clinical Solution Design Interface), JIRA (Agile Framework and UAT Testing), Scribe (Translations and Device Testing), Coding (SQL, Python, Power BI), SharePoint and TMF<br/>
         <strong>Projects:</strong> Managed design for ~5 global studies
       </div>
 
@@ -116,8 +129,9 @@
         <span class="pill">Systems thinking</span>
         <span class="pill">Templates & standards</span>
         <span class="pill">Localization (25+)</span>
+        <span class="pill">Agile iteration</span>
         <span class="pill">Testing & quality</span>
-        <span class="pill">Release readiness</span>
+        <span class="pill">Release coordination</span>
       </div>
 
       <div class="callout">
@@ -132,12 +146,12 @@
 
       <div class="grid two">
         <div class="card">
-          <div class="k">What this case study shows</div>
-          Designing scalable systems for complex workflows, where language, logic, validation rules, and cross-device behavior must work together.
+          <div class="k">Overview</div>
+          End-to-end solution design for global RWE studies using a configuration-driven design surface, with strong focus on clarity, scalability, and error prevention.
         </div>
         <div class="card">
-          <div class="k">Why it matters</div>
-          RWE study solutions operate in high-stakes environments where clarity, consistency, and error prevention directly impact execution quality.
+          <div class="k">Scope</div>
+          ~5 global studies · Multi-country deployments · Cross-device validation · Localization across 25+ languages/regions.
         </div>
       </div>
 
@@ -260,16 +274,8 @@
         I enjoy designing products that empower other builders — and this project sharpened that skill in a high-stakes, global context.
       </p>
 
-      <h2>What to Include Visually (Redacted)</h2>
       <div class="callout">
-        Even though this isn’t UI-centric, visuals are essential. Include:
-        <ul>
-          <li>Workflow diagrams showing logic flows</li>
-          <li>Annotated configuration screenshots from Sculptor</li>
-          <li>Example templates you created</li>
-          <li>Validation rule diagrams</li>
-        </ul>
-        Use redactions where necessary to protect IP.
+        <strong>Note:</strong> Visual artifacts can be shared in interviews with appropriate redaction to protect confidential information.
       </div>
 
     </div>
@@ -277,8 +283,12 @@
 
   <div class="footer">
     <div class="wrap">
-      Note: Visual artifacts are redacted to protect confidential information and can be shared in more detail during interviews.
+      © <span id="y"></span> Sakshi Sandeep Salvi · Case study content is redacted where necessary to protect confidential information.
     </div>
   </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
