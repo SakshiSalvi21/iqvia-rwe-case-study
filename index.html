@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Global RWE Study Design Solutions | Sakshi Salvi</title>
+  <meta name="description" content="Case study: Designing global Real-World Evidence (RWE) study solutions at IQVIA (systems design, localization, validation, release)." />
+  <style>
+    :root {
+      --maxw: 880px;
+      --fg: #111;
+      --muted: #444;
+      --bg: #fff;
+      --card: #f6f6f6;
+      --border: #e7e7e7;
+      --radius: 14px;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      padding: 44px 18px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; }
+    h1 { margin: 0 0 10px; font-size: 34px; line-height: 1.2; }
+    .meta { color: var(--muted); font-size: 15px; }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      margin: 6px 8px 0 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    main { padding: 20px 18px 60px; }
+    h2 { margin: 34px 0 10px; font-size: 22px; }
+    h3 { margin: 18px 0 6px; font-size: 16px; }
+    p { margin: 10px 0; }
+    ul { margin: 10px 0 10px 22px; }
+    li { margin: 6px 0; }
+    .callout {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      margin: 18px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin: 14px 0;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+    }
+    .footer {
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+      padding: 18px;
+    }
+    a { color: inherit; }
+    @media (min-width: 900px) {
+      .grid.two { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Designing Global RWE Study Solutions at IQVIA</h1>
+      <div class="meta">
+        <strong>Sakshi Sandeep Salvi</strong> · Business Systems Analyst / Solution Designer (Systems Product Design)
+        <br />
+        Platform: Sculptor · Scope: ~5 global studies · 25+ countries/languages
+      </div>
+      <div>
+        <span class="pill">Systems thinking</span>
+        <span class="pill">Localization (25+)</span>
+        <span class="pill">Templates & standards</span>
+        <span class="pill">Testing & release</span>
+      </div>
+
+      <div class="callout">
+        <strong>What I designed:</strong> not a pixel UI. A configuration-driven system where clarity of logic, scalable templates,
+        and language accuracy determined whether global deployments succeeded.
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <h2>Overview</h2>
+      <div class="grid two">
+        <div class="card"><strong>Context</strong><br/>Real-World Evidence (RWE) / Study Design solutions</div>
+        <div class="card"><strong>Users</strong><br/>Clinical researchers, operational teams, cross-functional partners</div>
+        <div class="card"><strong>My role</strong><br/>End-to-end solution design from discovery to deployment</div>
+        <div class="card"><strong>Outcome</strong><br/>Scalable patterns, reduced rework, consistent global deployments</div>
+      </div>
+
+      <h2>The Challenge</h2>
+      <p>
+        <!-- Replace this paragraph with your Gamma “Challenge” section -->
+        RWE studies require designing digital solutions that work across diverse clinical workflows, regions, and devices,
+        while maintaining data integrity and audit readiness. The design surface was Sculptor, a configuration environment
+        where logic, content, validation rules, and localization must fit together cleanly.
+      </p>
+
+      <h2>My Role & Ownership</h2>
+      <ul>
+        <!-- Replace these bullets with your Gamma “Role” bullets -->
+        <li>Led requirements discovery and translated stakeholder needs into structured workflows and system logic.</li>
+        <li>Designed reusable templates and standard patterns to reduce variability and error.</li>
+        <li>Managed localization and translation across 25+ countries and validated language in context.</li>
+        <li>Ran cross-device testing, UAT workflows, and supported release/deployment.</li>
+        <li>Iterated in an agile feedback loop with clinical, operational, QA, and engineering teams.</li>
+      </ul>
+
+      <h2>Understanding the Users</h2>
+      <p>
+        <!-- Replace with your Gamma “Users” section -->
+        Users needed predictable system behavior, clear language, and confidence that configurations adhered to clinical and regulatory requirements.
+      </p>
+
+      <h2>Design Approach</h2>
+
+      <h3>Systems thinking first</h3>
+      <ul>
+        <!-- Replace with your Gamma “Systems thinking” bullets -->
+        <li>Structured logic flows so stakeholders could reason about behavior and edge cases.</li>
+        <li>Encoded best practices into templates to reduce cognitive load and speed delivery.</li>
+        <li>Made meaning explicit through naming, rules, and constraints to prevent invalid states.</li>
+      </ul>
+
+      <h3>Iterative feedback & agile collaboration</h3>
+      <p>
+        <!-- Replace with your Gamma “Iteration” section -->
+        I built tight feedback loops with stakeholders, refining configurations based on review sessions, test outcomes, and implementation constraints.
+      </p>
+
+      <h2>Key Design Decisions</h2>
+      <ol>
+        <!-- Replace with your 3 decisions from Gamma -->
+        <li><strong>Reusable configuration templates:</strong> standardized repeatable patterns to improve consistency and speed.</li>
+        <li><strong>Language-aware structuring:</strong> modularized content and validated translations in context to avoid logic-text mismatches.</li>
+        <li><strong>Validation & constraint rules:</strong> introduced safeguards to reduce runtime errors and protect data integrity.</li>
+      </ol>
+
+      <h2>Testing, Release & Quality</h2>
+      <ul>
+        <!-- Replace with your Gamma testing section -->
+        <li>Cross-device functional validation and scenario testing for edge cases.</li>
+        <li>UAT cycles with clinical and operational stakeholders.</li>
+        <li>Release readiness checks and post-deployment verification.</li>
+      </ul>
+
+      <h2>Results & Impact</h2>
+      <ul>
+        <!-- Replace with your Gamma impact bullets -->
+        <li>Supported global deployments across multiple regions with consistent behavior.</li>
+        <li>Reduced configuration errors and rework through clearer patterns and validation.</li>
+        <li>Maintained language integrity across 25+ translations.</li>
+        <li>Strengthened cross-functional alignment through clearer logic and documentation.</li>
+      </ul>
+
+      <h2>Reflection</h2>
+      <p>
+        <!-- Replace with your reflection -->
+        This work reinforced that design isn’t only pixels. In complex systems, good design is clarity under constraints:
+        patterns that scale, language that communicates intent, and structures that prevent error.
+      </p>
+
+      <h2>Artifacts (Redacted)</h2>
+      <div class="callout">
+        Add redacted visuals here:
+        <ul>
+          <li>Workflow diagram(s)</li>
+          <li>Annotated configuration screenshots (redacted)</li>
+          <li>Template examples</li>
+          <li>Validation rules / decision logic</li>
+        </ul>
+        Place images in <code>/assets</code> and reference them like: <code>&lt;img src="assets/workflow-redacted.png" /&gt;</code>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="footer">
+    <div class="wrap">
+      Note: Visual artifacts are redacted to protect confidential information and can be shared in more detail during interviews.
+    </div>
+  </div>
+</body>
+</html>
