@@ -62,7 +62,7 @@ Additional details and examples can be shared during interviews when appropriate
 **Sakshi Sandeep Salvi**  
 📍 Canada (Remote-ready: US / Canada)  
 📧 salvisakshi2198@gmail.com  
-🔗 (https://www.linkedin.com/in/sakshi-salvi-9b9a0419a/) / (https://global-rwe-solutions-vzpmacb.gamma.site/)
+🔗 [LinkedIn](https://www.linkedin.com/in/sakshi-salvi-9b9a0419a/) / [Portfolio](https://global-rwe-solutions-vzpmacb.gamma.site/)
 
 ---
 
